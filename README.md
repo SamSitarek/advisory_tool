@@ -8,27 +8,29 @@
     What if you are an undeclared major because you’re considering several paths?
     What do you do?
     
-    The dashboard I’m looking to create will help you visualize the path you can take and how long it will take to get there.
-    It will show you which courses will satisfy each program requirement and provide clarity for you and your advisor.
+    The dashboard I’m looking to create will help you visualize the path you can take and how long it will take
+    to get there. It will show you which courses will satisfy each program requirement and provide clarity for
+    you and your advisor.
 
-    This tool will be heavy with information and will come from the school’s website providing the degrees/certifications they offer,
-    the programs they offer and their course requirements, the class description, and the ability for the tool to accumulate a
-    calculating list of the courses pertaining to that student. Being that it will be collecting a large amount of data
-    (via web-scraping) the time to execute the collection is crucial.
+    This tool will be heavy with information and will come from the school’s website providing the degrees and/or
+    certifications they offer, the programs they offer and their course requirements, the class description, and
+    the ability for the tool to accumulate a calculating list of the courses pertaining to that student. Being
+    that it will be collecting a large amount of data (via web-scraping) the time to execute the collection is
+    crucial.
 
 
 ## Motivation
 ##### Here you will go into more detail about why you have chosen this project.
 
-    I’m always looking to learn and grow. While searching for my next path to continue education has been a bit of a maze.
-    There are so many options of where and how to learn that I would like to provide a centralized tool that can truly
-    light the path for learning.
+    I’m always looking to learn and grow. While searching for my next path to continue education has been a bit
+    of a maze. There are so many options of where and how to learn that I would like to provide a centralized
+    tool that can truly light the path for learning.
 
 ## Data Question
 ##### Present your question. Feel free to include any research/articles that are relevant or show where others have attempted to answer this question.
 
-    What class choices can be made towards my education goals? 
-    Advisors face this difficult question every day, without a strong tool to help them visualize the path for the student.
+    What class choices can be made towards my education goals? Advisors face this difficult question every day,
+    without a strong tool to help them visualize the path for the student.
 
 ## Minimum Viable Product (MVP)
 
@@ -42,12 +44,13 @@
 
         •	the requirements of the program and the courses that will satisfy each
 
-        •	allow it to assemble the list of courses for that student on the dashboard and assemble the credit count
+        •	allow it to assemble the list of courses for that student on the dashboard & assemble the credit count
 
         •	class description (or link to it depending on space on dashboard)
 
-        •	have an example of how it can be ‘Save-As”ed for a student and you can open a student’s most recent dashboard upon their
-            next visit to continue exploring their next steps while still having a history of each visit in their folder
+        •	have an example of how it can be ‘Save-As”ed for a student and you can open a student’s most recent
+            dashboard upon their next visit to continue exploring their next steps while still having a history
+            of each visit in their folder
 
     In order to take it further:
 
@@ -72,7 +75,7 @@
     1.	Get the Data (<8/9/21>)
     2.	Clean & Explore the Data (<8/13/21>)
     3.	Create Presentation of your Analysis (<8/16/21>)
-    -	    Should be a presentation, but could include a Jupyter Notebook or dashboard in Excel, Tableau, or PowerBI
+    -	Should be a presentation, but could include a Jupyter Notebook or dashboard in Excel, Tableau, or PowerBI
     4.	Internal demos (<8/16/21>)
     5.	Demo Day!! (<8/20/21>)
 
