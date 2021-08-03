@@ -2,7 +2,7 @@
 ## Executive Summary
 ##### This section provides an overview to the project. It should briefly touch on the motivation, data question, data to be used, along with any known assumptions and challenges. 
 
-    Trying to navigate your path of education in a vast world of learning can be overwhelming; where do you start?
+    Trying to navigate a path of education in a vast world of learning can be overwhelming; where do you start?
     It can be daunting to figure out what classes would be best?
     If you select a specific course will it go toward the degree you want?
     What if you are an undeclared major because you’re considering several paths?
@@ -44,7 +44,7 @@
 
         •	the requirements of the program and the courses that will satisfy each
 
-        •	allow it to assemble the list of courses for that student on the dashboard & assemble the credit count
+        •	allow it to assemble the list of courses for a student on the dashboard & assemble the credit count
 
         •	class description (or link to it depending on space on dashboard)
 
@@ -75,7 +75,7 @@
     1.	Get the Data (<8/9/21>)
     2.	Clean & Explore the Data (<8/13/21>)
     3.	Create Presentation of your Analysis (<8/16/21>)
-    -	Should be a presentation, but could include a Jupyter Notebook or dashboard in Excel, Tableau, or PowerBI
+    -	Should be a presentation, but could include a Jupyter Notebook or dashboard in Excel/Tableau/PowerBI
     4.	Internal demos (<8/16/21>)
     5.	Demo Day!! (<8/20/21>)
 
