@@ -12,11 +12,11 @@
     to get there. It will show you which courses will satisfy each program requirement and provide clarity for
     you and your advisor.
 
-    This tool will be heavy with information and will come from the school’s website providing the degrees and/or
-    certifications they offer, the programs they offer and their course requirements, the class description, and
-    the ability for the tool to accumulate a calculating list of the courses pertaining to that student. Being
-    that it will be collecting a large amount of data (via web-scraping) the time to execute the collection is
-    crucial.
+    This tool will be heavy with information and will come from the school’s website providing the degrees
+    and/or certifications they offer, the programs they offer and their course requirements, the class
+    description, and the ability for the tool to accumulate a calculating list of the courses pertaining to
+    that student. Being that it will be collecting a large amount of data (via web-scraping) the time to
+    execute the collection is crucial.
 
 
 ## Motivation
@@ -75,7 +75,7 @@
     1.	Get the Data (<8/9/21>)
     2.	Clean & Explore the Data (<8/13/21>)
     3.	Create Presentation of your Analysis (<8/16/21>)
-    -	Should be a presentation, but could include a Jupyter Notebook or dashboard in Excel/Tableau/PowerBI
+    -	Should be a presentation, but could include a Jupyter Notebook or dashboard (Excel/Tableau/PowerBI)
     4.	Internal demos (<8/16/21>)
     5.	Demo Day!! (<8/20/21>)
 
