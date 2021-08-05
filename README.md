@@ -22,9 +22,9 @@
 ## Motivation
 ##### Here you will go into more detail about why you have chosen this project.
 
-    I’m always looking to learn and grow. While searching for my next path to continue education has been a bit
-    of a maze. There are so many options of where and how to learn that I would like to provide a centralized
-    tool that can truly light the path for learning.
+    I’m always looking to learn and grow. I've found searching for my next path to continue education to be
+    a bit of a maze. There are so many options of where and how to learn that I would like to provide a
+    centralized tool that can truly light the path for learning.
 
 ## Data Question
 ##### Present your question. Feel free to include any research/articles that are relevant or show where others have attempted to answer this question.
