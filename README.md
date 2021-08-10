@@ -1,6 +1,6 @@
-# Advisory Tool
+# Higher Education Advisory Tool
 ## Executive Summary
-##### This section provides an overview to the project. It should briefly touch on the motivation, data question, data to be used, along with any known assumptions and challenges. 
+ 
 
     Trying to navigate a path of education in a vast world of learning can be overwhelming; where do you start?
     It can be daunting to figure out what classes would be best?
@@ -20,21 +20,21 @@
 
 
 ## Motivation
-##### Here you will go into more detail about why you have chosen this project.
+
 
     I’m always looking to learn and grow. I've found searching for my next path to continue education to be
     a bit of a maze. There are so many options of where and how to learn that I would like to provide a
     centralized tool that can truly light the path for learning.
 
 ## Data Question
-##### Present your question. Feel free to include any research/articles that are relevant or show where others have attempted to answer this question.
+
 
     What class choices can be made towards my education goals? Advisors face this difficult question every day,
     without a strong tool to help them visualize the path for the student.
 
 ## Minimum Viable Product (MVP)
 
-##### Define your MVP. This should be a description of what your final capstone will look like, including visualizations, how the analysis will be presented, who the intended audience is, etc.
+
 
     This will be an interactive dashboard to allow someone to explore the following:
 
@@ -80,7 +80,7 @@
     5.	Demo Day!! (<8/20/21>)
 
 ## Data Sources
-##### Document the data you use and the source of that data
+
 
     https://www.belmont.edu/
 
@@ -89,10 +89,7 @@
     https://www.vanderbilt.edu/
 
 ## Known Issues and Challenges
-##### Explain any anticipated challenges with your project, and your plan for managing them. Be sure to include:
-##### ●	    If you need to request data or an api key
 
-##### ●	    Based on your data sources, known data cleaning steps
 
     Will require more than a fair amount of web-scraping to collect the following:
     •	Degrees/Certifications offered at each school
