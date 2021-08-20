@@ -1,7 +1,7 @@
 # Higher Education Advisory Tool
 ## Executive Summary
  
-
+        
     Trying to navigate a path of education in a vast world of learning can be overwhelming; where do you start?
     It can be daunting to figure out what classes would be best?
     If you select a specific course will it go toward the degree you want?
@@ -35,12 +35,9 @@
 ## Minimum Viable Product (MVP)
 
 
-
     This will be an interactive dashboard to allow someone to explore the following:
 
-        •	3 colleges/universities in TN (Belmont, Lipscomb and Vanderbilt)
-
-        •	the degrees/certificates offered there
+        •	the degrees/certificates offered at Belmont University
 
         •	the requirements of the program and the courses that will satisfy each
 
@@ -71,13 +68,6 @@
     
         •	have it check if the prerequisites in that class have already been taken
 
-## Schedule (through <8/20/21>)
-    1.	Get the Data (<8/9/21>)
-    2.	Clean & Explore the Data (<8/13/21>)
-    3.	Create Presentation of your Analysis (<8/16/21>)
-    -	Should be a presentation, but could include a Jupyter Notebook or dashboard (Excel/Tableau/PowerBI)
-    4.	Internal demos (<8/16/21>)
-    5.	Demo Day!! (<8/20/21>)
 
 ## Data Sources
 
@@ -92,8 +82,17 @@
 
 
     Will require more than a fair amount of web-scraping to collect the following:
-    •	Degrees/Certifications offered at each school
-    •	Majors/Minors/Concentrations offered at each school
+    •	Degrees/Certifications offered
+    •	Majors/Minors/Concentrations offered
     •	Requirements of each program
     •	Will have to make sure the interactivity can execute as intended
 
+
+## Discovered Issues and Challenges
+
+
+    The website wasn't as balanced as I would have hoped with a <div> for each section in the courses.
+    It didn't break up the sections to where there was a specified <div> with a class or id that I could
+    pull the course description from or the prerequisites/corequisites.
+
+    
