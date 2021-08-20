@@ -19,153 +19,6 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='belmont' inline='true' name='federated.0yq1m790n27gt51d439ys1rsdvbz' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='belmont' name='textscan.1ci7hwt0ugcm69175msjf0eyhmwc'>
-            <connection class='textscan' directory='C:/Users/Samantha/Desktop/NSS Folder/Projects/advisory_tool/Data' filename='belmont.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ci7hwt0ugcm69175msjf0eyhmwc' name='belmont.csv' table='[belmont#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='Index' ordinal='0' />
-            <column datatype='string' name='Degree' ordinal='1' />
-            <column datatype='string' name='Program' ordinal='2' />
-            <column datatype='string' name='Total Credit Hours' ordinal='3' />
-            <column datatype='string' name='Program_Link' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ci7hwt0ugcm69175msjf0eyhmwc' name='belmont.csv' table='[belmont#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='Index' ordinal='0' />
-            <column datatype='string' name='Degree' ordinal='1' />
-            <column datatype='string' name='Program' ordinal='2' />
-            <column datatype='string' name='Total Credit Hours' ordinal='3' />
-            <column datatype='string' name='Program_Link' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[belmont.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Index</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Index]</local-name>
-            <parent-name>[belmont.csv]</parent-name>
-            <remote-alias>Index</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <approx-count>210</approx-count>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Degree</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Degree]</local-name>
-            <parent-name>[belmont.csv]</parent-name>
-            <remote-alias>Degree</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Program</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Program]</local-name>
-            <parent-name>[belmont.csv]</parent-name>
-            <remote-alias>Program</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Total Credit Hours</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Total Credit Hours]</local-name>
-            <parent-name>[belmont.csv]</parent-name>
-            <remote-alias>Total Credit Hours</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Program_Link</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Program_Link]</local-name>
-            <parent-name>[belmont.csv]</parent-name>
-            <remote-alias>Program_Link</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Program Link' datatype='string' name='[Program_Link]' role='dimension' type='nominal' />
-      <_.fcp.ObjectModelTableType.true...column caption='belmont.csv' datatype='table' name='[__tableau_internal_object_id__].[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]' role='measure' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='belmont.csv' id='belmont.csv_3C13389976FE42EAB6F8FC48B7509C92'>
-            <properties context=''>
-              <relation connection='textscan.1ci7hwt0ugcm69175msjf0eyhmwc' name='belmont.csv' table='[belmont#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-                  <column datatype='integer' name='Index' ordinal='0' />
-                  <column datatype='string' name='Degree' ordinal='1' />
-                  <column datatype='string' name='Program' ordinal='2' />
-                  <column datatype='string' name='Total Credit Hours' ordinal='3' />
-                  <column datatype='string' name='Program_Link' ordinal='4' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='course_info (course_info_cleaned) Student' inline='true' name='federated.0aye6vc1axqq7010lwue90ya2kd9' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -542,6 +395,147 @@
             <properties context=''>
               <relation connection='excel-direct.0vloqno1huhi2g1b5w14b1uhcy7j' name='degrees_and_majors' table='[degrees_and_majors$]' type='table'>
                 <columns gridOrigin='A1:E211:no:A1:E211:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Index' ordinal='0' />
+                  <column datatype='string' name='Degree' ordinal='1' />
+                  <column datatype='string' name='Program' ordinal='2' />
+                  <column datatype='string' name='Total Credit Hours' ordinal='3' />
+                  <column datatype='string' name='Program_Link' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='belmont' inline='true' name='federated.0yq1m790n27gt51d439ys1rsdvbz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='belmont' name='textscan.1ci7hwt0ugcm69175msjf0eyhmwc'>
+            <connection class='textscan' directory='C:/Users/Samantha/Desktop/NSS Folder/Projects/advisory_tool/Data' filename='belmont.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ci7hwt0ugcm69175msjf0eyhmwc' name='belmont.csv' table='[belmont#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Index' ordinal='0' />
+            <column datatype='string' name='Degree' ordinal='1' />
+            <column datatype='string' name='Program' ordinal='2' />
+            <column datatype='string' name='Total Credit Hours' ordinal='3' />
+            <column datatype='string' name='Program_Link' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ci7hwt0ugcm69175msjf0eyhmwc' name='belmont.csv' table='[belmont#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Index' ordinal='0' />
+            <column datatype='string' name='Degree' ordinal='1' />
+            <column datatype='string' name='Program' ordinal='2' />
+            <column datatype='string' name='Total Credit Hours' ordinal='3' />
+            <column datatype='string' name='Program_Link' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[belmont.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Index]</local-name>
+            <parent-name>[belmont.csv]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Degree</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Degree]</local-name>
+            <parent-name>[belmont.csv]</parent-name>
+            <remote-alias>Degree</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Program</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Program]</local-name>
+            <parent-name>[belmont.csv]</parent-name>
+            <remote-alias>Program</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Credit Hours</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Credit Hours]</local-name>
+            <parent-name>[belmont.csv]</parent-name>
+            <remote-alias>Total Credit Hours</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Program_Link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Program_Link]</local-name>
+            <parent-name>[belmont.csv]</parent-name>
+            <remote-alias>Program_Link</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Program Link' datatype='string' name='[Program_Link]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='belmont.csv' datatype='table' name='[__tableau_internal_object_id__].[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='belmont.csv' id='belmont.csv_3C13389976FE42EAB6F8FC48B7509C92'>
+            <properties context=''>
+              <relation connection='textscan.1ci7hwt0ugcm69175msjf0eyhmwc' name='belmont.csv' table='[belmont#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
                   <column datatype='integer' name='Index' ordinal='0' />
                   <column datatype='string' name='Degree' ordinal='1' />
                   <column datatype='string' name='Program' ordinal='2' />
@@ -1386,70 +1380,40 @@
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='98734' id='87' param='horz' type-v2='layout-flow' w='99368' x='316' y='633'>
-            <zone h='98734' id='50' param='horz' type-v2='layout-flow' w='99368' x='316' y='633'>
-              <zone h='98734' id='40' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
-                <zone h='98734' id='38' type-v2='layout-basic' w='99368' x='316' y='633'>
-                  <zone h='92792' id='19' param='horz' type-v2='layout-flow' w='96218' x='2046' y='3236'>
-                    <zone h='92792' id='12' type-v2='layout-basic' w='96218' x='2046' y='3236'>
-                      <zone h='92792' id='9' param='horz' type-v2='layout-flow' w='56746' x='2046' y='3236'>
-                        <zone h='92792' id='7' type-v2='layout-basic' w='56746' x='2046' y='3236'>
-                          <zone forceUpdate='' h='87186' id='3' param='https://catalog.belmont.edu/content.php?catoid=9&amp;navoid=445' type-v2='web' w='35743' x='23049' y='8842'>
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone h='92792' id='23' type-v2='empty' w='1271' x='21778' y='3236'>
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone forceUpdate='true' h='5606' id='32' type-v2='text' w='35743' x='23049' y='3236'>
-                            <formatted-text>
-                              <run bold='true' fontalignment='1' fontsize='24' underline='true'>Higher Education Advisory Tool</run>
-                            </formatted-text>
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone h='57109' id='11' name='Explore Programs' show-caption='true' w='19732' x='2046' y='38919'>
-                            <layout-cache type-h='fixed' type-w='fixed' />
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone h='33150' id='5' name='Explore Degrees' show-caption='true' w='19732' x='2046' y='3236'>
-                            <layout-cache type-h='fixed' type-w='fixed' />
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone h='2533' id='52' type-v2='empty' w='19732' x='2046' y='36386'>
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
+            <zone h='98734' id='40' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
+              <zone h='98734' id='38' type-v2='layout-basic' w='99368' x='316' y='633'>
+                <zone h='92794' id='19' param='horz' type-v2='layout-flow' w='96218' x='2044' y='3228'>
+                  <zone h='92794' id='12' type-v2='layout-basic' w='96218' x='2044' y='3228'>
+                    <zone h='92794' id='9' param='horz' type-v2='layout-flow' w='56744' x='2044' y='3228'>
+                      <zone h='92794' id='7' type-v2='layout-basic' w='56744' x='2044' y='3228'>
+                        <zone forceUpdate='' h='87194' id='3' param='https://catalog.belmont.edu/content.php?catoid=9&amp;navoid=444' type-v2='web' w='35745' x='23043' y='8828'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
                         </zone>
-                      </zone>
-                      <zone fixed-size='160' h='92792' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='38209' x='60055' y='3236'>
-                        <zone fixed-size='422' h='34019' id='16' is-fixed='true' name='Explore Courses' w='38209' x='60055' y='3236'>
+                        <zone h='92794' id='23' type-v2='empty' w='1271' x='21772' y='3228'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone forceUpdate='true' h='5600' id='32' type-v2='text' w='35745' x='23043' y='3228'>
+                          <formatted-text>
+                            <run bold='true' fontalignment='1' fontsize='24' underline='true'>Higher Education Advisory Tool</run>
+                          </formatted-text>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='57115' id='11' name='Explore Programs' show-caption='true' w='19728' x='2044' y='38907'>
                           <layout-cache type-h='fixed' type-w='fixed' />
                           <zone-style>
                             <format attr='border-color' value='#000000' />
@@ -1458,7 +1422,8 @@
                             <format attr='margin' value='4' />
                           </zone-style>
                         </zone>
-                        <zone fixed-size='35' h='3402' id='29' is-fixed='true' type-v2='empty' w='38209' x='60055' y='37255'>
+                        <zone h='33146' id='5' name='Explore Degrees' show-caption='true' w='19728' x='2044' y='3228'>
+                          <layout-cache type-h='fixed' type-w='fixed' />
                           <zone-style>
                             <format attr='border-color' value='#000000' />
                             <format attr='border-style' value='none' />
@@ -1466,8 +1431,7 @@
                             <format attr='margin' value='4' />
                           </zone-style>
                         </zone>
-                        <zone h='55371' id='21' name='Explore Course Descriptions' w='38209' x='60055' y='40657'>
-                          <layout-cache type-h='cell' type-w='fixed' />
+                        <zone h='2533' id='52' type-v2='empty' w='19728' x='2044' y='36374'>
                           <zone-style>
                             <format attr='border-color' value='#000000' />
                             <format attr='border-style' value='none' />
@@ -1476,7 +1440,27 @@
                           </zone-style>
                         </zone>
                       </zone>
-                      <zone h='92792' id='53' type-v2='empty' w='1263' x='58792' y='3236'>
+                    </zone>
+                    <zone fixed-size='160' h='92794' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='38211' x='60051' y='3228'>
+                      <zone fixed-size='422' h='34019' id='16' is-fixed='true' name='Explore Courses' w='38211' x='60051' y='3228'>
+                        <layout-cache type-h='fixed' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone fixed-size='57' h='5142' id='29' is-fixed='true' type-v2='empty' w='38211' x='60051' y='37247'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='53633' id='21' name='Explore Course Descriptions' w='38211' x='60051' y='42389'>
+                        <layout-cache cell-count-h='2367' non-cell-size-h='63' type-h='cell' type-w='fixed' />
                         <zone-style>
                           <format attr='border-color' value='#000000' />
                           <format attr='border-style' value='none' />
@@ -1485,39 +1469,47 @@
                         </zone-style>
                       </zone>
                     </zone>
+                    <zone h='92794' id='53' type-v2='empty' w='1263' x='58788' y='3228'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
                   </zone>
-                  <zone h='2603' id='25' type-v2='empty' w='96218' x='2046' y='633'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='95395' id='26' type-v2='empty' w='1730' x='316' y='633'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='3339' id='27' type-v2='empty' w='97948' x='316' y='96028'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='98734' id='28' type-v2='empty' w='1420' x='98264' y='633'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
+                </zone>
+                <zone h='2595' id='25' type-v2='empty' w='96218' x='2044' y='633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='95389' id='26' type-v2='empty' w='1728' x='316' y='633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='3345' id='27' type-v2='empty' w='97946' x='316' y='96022'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='98734' id='28' type-v2='empty' w='1422' x='98262' y='633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
                 </zone>
               </zone>
             </zone>
@@ -1533,14 +1525,14 @@
         <zone h='3481' id='15' mode='pattern' name='Explore Programs' param='[federated.0yq1m790n27gt51d439ys1rsdvbz].[none:Program:nk]' show-title='false' type-v2='filter' values='database' w='11494' x='9834' y='39636' />
         <zone h='4826' id='48' mode='checkdropdown' name='Explore Courses' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Name:nk]' type-v2='filter' values='relevant' w='19455' x='67518' y='2453' />
         <zone h='4272' id='51' mode='checkdropdown' name='Explore Courses' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Credit Hours:nk]' type-v2='filter' values='database' w='7143' x='87648' y='2373' />
-        <zone h='3560' id='88' mode='pattern' name='Explore Course Descriptions' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]' type-v2='filter' values='database' w='26692' x='72244' y='40111' />
+        <zone h='3560' id='88' mode='pattern' name='Explore Course Descriptions' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]' type-v2='filter' values='database' w='26677' x='71902' y='37579' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='96' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98734' id='95' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
+            <zone h='100000' id='102' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98734' id='101' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
                 <zone h='3481' id='10' mode='pattern' name='Explore Degrees' param='[federated.0yq1m790n27gt51d439ys1rsdvbz].[none:Degree:nk]' show-title='false' type-v2='filter' values='database' w='12048' x='9493' y='4193'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1550,7 +1542,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='257' h='33150' id='5' is-fixed='true' name='Explore Degrees' show-caption='true' w='19732' x='2046' y='3236'>
+                <zone fixed-size='257' h='33146' id='5' is-fixed='true' name='Explore Degrees' show-caption='true' w='19728' x='2044' y='3228'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1560,7 +1552,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone forceUpdate='true' h='5606' id='32' type-v2='text' w='35743' x='23049' y='3236'>
+                <zone forceUpdate='true' h='5600' id='32' type-v2='text' w='35745' x='23043' y='3228'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontsize='24' underline='true'>Higher Education Advisory Tool</run>
                   </formatted-text>
@@ -1590,7 +1582,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='264' h='34019' id='16' is-fixed='true' name='Explore Courses' w='38209' x='60055' y='3236'>
+                <zone fixed-size='264' h='34019' id='16' is-fixed='true' name='Explore Courses' w='38211' x='60051' y='3228'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1600,7 +1592,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' forceUpdate='' h='87186' id='3' is-fixed='true' param='https://catalog.belmont.edu/content.php?catoid=9&amp;navoid=445' type-v2='web' w='35743' x='23049' y='8842'>
+                <zone fixed-size='280' forceUpdate='' h='87194' id='3' is-fixed='true' param='https://catalog.belmont.edu/content.php?catoid=9&amp;navoid=444' type-v2='web' w='35745' x='23043' y='8828'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1618,7 +1610,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='57109' id='11' is-fixed='true' name='Explore Programs' show-caption='true' w='19732' x='2046' y='38919'>
+                <zone fixed-size='280' h='57115' id='11' is-fixed='true' name='Explore Programs' show-caption='true' w='19728' x='2044' y='38907'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1628,7 +1620,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='3560' id='88' mode='pattern' name='Explore Course Descriptions' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]' type-v2='filter' values='database' w='26692' x='72244' y='40111'>
+                <zone h='3560' id='88' mode='pattern' name='Explore Course Descriptions' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]' type-v2='filter' values='database' w='26677' x='71902' y='37579'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1637,8 +1629,8 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='55371' id='21' is-fixed='true' name='Explore Course Descriptions' w='38209' x='60055' y='40657'>
-                  <layout-cache type-h='cell' type-w='fixed' />
+                <zone fixed-size='280' h='53633' id='21' is-fixed='true' name='Explore Course Descriptions' w='38211' x='60051' y='42389'>
+                  <layout-cache cell-count-h='2367' non-cell-size-h='63' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1683,9 +1675,9 @@
         <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='98734' id='34' param='horz' type-v2='layout-flow' w='99368' x='316' y='633'>
             <zone h='98734' id='30' type-v2='layout-basic' w='99368' x='316' y='633'>
-              <zone h='93671' id='15' param='horz' type-v2='layout-flow' w='97989' x='316' y='3155'>
-                <zone h='93671' id='13' type-v2='layout-basic' w='97989' x='316' y='3155'>
-                  <zone forceUpdate='true' h='20960' id='19' type-v2='text' w='17914' x='62476' y='3155'>
+              <zone h='93672' id='15' param='horz' type-v2='layout-flow' w='97986' x='316' y='3150'>
+                <zone h='93672' id='13' type-v2='layout-basic' w='97986' x='316' y='3150'>
+                  <zone forceUpdate='true' h='20955' id='19' type-v2='text' w='17914' x='62473' y='3150'>
                     <formatted-text>
                       <run bold='true' fontalignment='1' fontsize='16' underline='true'>Student Information</run>
                       <run fontalignment='1'>Æ&#10;</run>
@@ -1716,7 +1708,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='93671' id='20' name='Student Course List' w='35636' x='1643' y='3155'>
+                  <zone h='93672' id='20' name='Student Course List' w='35633' x='1640' y='3150'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1724,7 +1716,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone forceUpdate='' h='62505' id='21' param='https://catalog.belmont.edu/preview_program.php?catoid=9&amp;poid=2174&amp;returnto=444' type-v2='web' w='59216' x='39089' y='34321'>
+                  <zone forceUpdate='' h='62510' id='21' param='https://catalog.belmont.edu/preview_program.php?catoid=9&amp;poid=2174&amp;returnto=444' type-v2='web' w='59219' x='39083' y='34312'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1732,7 +1724,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='15567' id='11' name='Student Degree(s/Minor)' w='22047' x='39089' y='8548'>
+                  <zone h='15567' id='11' name='Student Degree(s/Minor)' w='22050' x='39083' y='8538'>
                     <layout-cache type-h='fixed' type-w='fixed' />
                     <zone-style>
                       <format attr='border-color' value='#000000' />
@@ -1741,7 +1733,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='5393' id='17' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Degree:nk]' type-v2='filter' values='database' w='9756' x='39089' y='3155'>
+                  <zone h='5388' id='17' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Degree:nk]' type-v2='filter' values='database' w='9759' x='39083' y='3150'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1749,7 +1741,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='5393' id='16' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]' type-v2='filter' values='relevant' w='12291' x='48845' y='3155'>
+                  <zone h='5388' id='16' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]' type-v2='filter' values='relevant' w='12291' x='48842' y='3150'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1757,7 +1749,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='93671' id='22' type-v2='empty' w='1810' x='37279' y='3155'>
+                  <zone h='93672' id='22' type-v2='empty' w='1810' x='37273' y='3150'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1765,7 +1757,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='93671' id='23' type-v2='empty' w='1327' x='316' y='3155'>
+                  <zone h='93672' id='23' type-v2='empty' w='1324' x='316' y='3150'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1773,7 +1765,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='20960' id='26' type-v2='empty' w='1340' x='61136' y='3155'>
+                  <zone h='20955' id='26' type-v2='empty' w='1340' x='61133' y='3150'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1781,7 +1773,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='2531' id='27' type-v2='empty' w='59216' x='39089' y='31790'>
+                  <zone h='2531' id='27' type-v2='empty' w='59219' x='39083' y='31781'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1789,7 +1781,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='20960' id='29' is-scaled='1' param='C:/Users/Samantha/Pictures/Belmont Mascot.jfif' type-v2='bitmap' w='17915' x='80390' y='3155'>
+                  <zone h='20955' id='29' is-scaled='1' param='C:/Users/Samantha/Pictures/Belmont Mascot.jfif' type-v2='bitmap' w='17915' x='80387' y='3150'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1797,12 +1789,11 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone forceUpdate='true' h='7675' id='52' type-v2='text' w='59216' x='39089' y='24115'>
+                  <zone forceUpdate='true' h='7676' id='52' type-v2='text' w='59219' x='39083' y='24105'>
                     <formatted-text>
-                      <run bold='true' fontalignment='1' fontsize='10' underline='true'>Student Notes</run>
-                      <run fontalignment='1'>
-
-8/18/21:    Bruiser has a passion for sports and is skilled in communication. After speaking with him we both agreed that Sport Administration would be a great fit!</run>
+                      <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11' underline='true'>Student Notes</run>
+                      <run fontalignment='1'>Æ&#10;&#10;</run>
+                      <run fontalignment='1' fontcolor='#000000' fontsize='10'>8/18/21:    Bruiser has a passion for sports and is skilled in communication. After speaking with him we both agreed that Sport Administration would be a great fit!</run>
                     </formatted-text>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
@@ -1813,7 +1804,7 @@
                   </zone>
                 </zone>
               </zone>
-              <zone h='2541' id='24' type-v2='empty' w='97989' x='316' y='96826'>
+              <zone h='2545' id='24' type-v2='empty' w='97986' x='316' y='96822'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1821,7 +1812,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='2522' id='25' type-v2='empty' w='97989' x='316' y='633'>
+              <zone h='2517' id='25' type-v2='empty' w='97986' x='316' y='633'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1829,7 +1820,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='98734' id='28' type-v2='empty' w='1379' x='98305' y='633'>
+              <zone h='98734' id='28' type-v2='empty' w='1382' x='98302' y='633'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1853,8 +1844,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='78' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98734' id='77' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
+            <zone h='100000' id='84' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98734' id='83' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
                 <zone h='3481' id='36' mode='checkdropdown' name='Student Course List' param='[federated.0aye6vc1axqq7010lwue90ya2kd9].[none:Credit Hours:nk]' type-v2='filter' values='database' w='7748' x='28310' y='2690'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1873,7 +1864,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='93671' id='20' is-fixed='true' name='Student Course List' w='35636' x='1643' y='3155'>
+                <zone fixed-size='280' h='93672' id='20' is-fixed='true' name='Student Course List' w='35633' x='1640' y='3150'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1882,7 +1873,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone forceUpdate='true' h='20960' id='19' type-v2='text' w='17914' x='62476' y='3155'>
+                <zone forceUpdate='true' h='20955' id='19' type-v2='text' w='17914' x='62473' y='3150'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontsize='16' underline='true'>Student Information</run>
                     <run fontalignment='1'>Æ&#10;</run>
@@ -1914,7 +1905,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='160' h='20960' id='29' is-fixed='true' is-scaled='1' param='C:/Users/Samantha/Pictures/Belmont Mascot.jfif' type-v2='bitmap' w='17915' x='80390' y='3155'>
+                <zone fixed-size='160' h='20955' id='29' is-fixed='true' is-scaled='1' param='C:/Users/Samantha/Pictures/Belmont Mascot.jfif' type-v2='bitmap' w='17915' x='80387' y='3150'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1923,7 +1914,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='5393' id='17' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Degree:nk]' type-v2='filter' values='database' w='9756' x='39089' y='3155'>
+                <zone h='5388' id='17' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Degree:nk]' type-v2='filter' values='database' w='9759' x='39083' y='3150'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1932,7 +1923,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='5393' id='16' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]' type-v2='filter' values='relevant' w='12291' x='48845' y='3155'>
+                <zone h='5388' id='16' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]' type-v2='filter' values='relevant' w='12291' x='48842' y='3150'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1941,7 +1932,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='117' h='15567' id='11' is-fixed='true' name='Student Degree(s/Minor)' w='22047' x='39089' y='8548'>
+                <zone fixed-size='117' h='15567' id='11' is-fixed='true' name='Student Degree(s/Minor)' w='22050' x='39083' y='8538'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1951,12 +1942,11 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone forceUpdate='true' h='7675' id='52' type-v2='text' w='59216' x='39089' y='24115'>
+                <zone forceUpdate='true' h='7676' id='52' type-v2='text' w='59219' x='39083' y='24105'>
                   <formatted-text>
-                    <run bold='true' fontalignment='1' fontsize='10' underline='true'>Student Notes</run>
-                    <run fontalignment='1'>
-
-8/18/21:    Bruiser has a passion for sports and is skilled in communication. After speaking with him we both agreed that Sport Administration would be a great fit!</run>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11' underline='true'>Student Notes</run>
+                    <run fontalignment='1'>Æ&#10;&#10;</run>
+                    <run fontalignment='1' fontcolor='#000000' fontsize='10'>8/18/21:    Bruiser has a passion for sports and is skilled in communication. After speaking with him we both agreed that Sport Administration would be a great fit!</run>
                   </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1966,7 +1956,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' forceUpdate='' h='62505' id='21' is-fixed='true' param='https://catalog.belmont.edu/preview_program.php?catoid=9&amp;poid=2174&amp;returnto=444' type-v2='web' w='59216' x='39089' y='34321'>
+                <zone fixed-size='280' forceUpdate='' h='62510' id='21' is-fixed='true' param='https://catalog.belmont.edu/preview_program.php?catoid=9&amp;poid=2174&amp;returnto=444' type-v2='web' w='59219' x='39083' y='34312'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1989,7 +1979,7 @@
       <simple-id uuid='{04B8199E-B4F4-475A-8CEE-B6CA572E95C3}' />
     </dashboard>
   </dashboards>
-  <windows show-side-pane='false' source-height='93'>
+  <windows show-side-pane='false' source-height='2'>
     <window class='worksheet' name='Explore Degrees'>
       <cards>
         <edge name='left'>
@@ -2120,7 +2110,7 @@
       </viewpoint>
       <simple-id uuid='{4A5DFE06-8E42-4C1C-BA65-40A87E4BB6F5}' />
     </window>
-    <window class='dashboard' name='Explore Belmont' tab-color='#f66273'>
+    <window class='dashboard' maximized='true' name='Explore Belmont' tab-color='#f66273'>
       <viewpoints>
         <viewpoint name='Explore Course Descriptions'>
           <zoom type='entire-view' />
@@ -2135,10 +2125,10 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='88' />
+      <active id='3' />
       <simple-id uuid='{460E6013-E858-4BB0-86BC-B231113FB4D3}' />
     </window>
-    <window class='dashboard' maximized='true' name='Student Path' tab-color='#4f779a'>
+    <window class='dashboard' name='Student Path' tab-color='#4f779a'>
       <viewpoints>
         <viewpoint name='Student Course List'>
           <zoom type='fit-width' />
@@ -2147,7 +2137,7 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='22' />
+      <active id='-1' />
       <simple-id uuid='{D79FD14F-4559-41E1-9667-97699CE17032}' />
     </window>
     <window class='worksheet' name='Student Degree(s/Minor)'>

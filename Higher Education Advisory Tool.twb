@@ -51,7 +51,6 @@
             <parent-name>[belmont.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
             <contains-null>true</contains-null>
             <attributes>
               <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
@@ -71,7 +70,6 @@
             <ordinal>0</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
-            <approx-count>210</approx-count>
             <contains-null>true</contains-null>
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[belmont.csv_3C13389976FE42EAB6F8FC48B7509C92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
@@ -84,7 +82,6 @@
             <ordinal>1</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
@@ -100,7 +97,6 @@
             <ordinal>2</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
@@ -116,7 +112,6 @@
             <ordinal>3</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
@@ -132,7 +127,6 @@
             <ordinal>4</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <approx-count>210</approx-count>
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
@@ -165,6 +159,296 @@
                   <column datatype='string' name='Program' ordinal='2' />
                   <column datatype='string' name='Total Credit Hours' ordinal='3' />
                   <column datatype='string' name='Program_Link' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='course_info (course_info_cleaned) Explore' inline='true' name='federated.1209w1k0afd9961bwkdyl1a22vd3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='course_info_cleaned' name='excel-direct.12chqyl0vt5ujh15b78231g5i8mi'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Samantha/Desktop/NSS Folder/Projects/advisory_tool/Data/course_info_cleaned.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.12chqyl0vt5ujh15b78231g5i8mi' name='course_info' table='[course_info$]' type='table'>
+          <columns gridOrigin='A1:J2373:no:A1:J2373:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Index' ordinal='0' />
+            <column datatype='string' name='Prefix' ordinal='1' />
+            <column datatype='string' name='Course ID' ordinal='2' />
+            <column datatype='string' name='Course_Name' ordinal='3' />
+            <column datatype='string' name='Credit Hours' ordinal='4' />
+            <column datatype='string' name='Credit_Hours' ordinal='5' />
+            <column datatype='string' name='Cross Listed' ordinal='6' />
+            <column datatype='string' name='Corequisites' ordinal='7' />
+            <column datatype='string' name='Prerequisites' ordinal='8' />
+            <column datatype='string' name='Course_Descriptions' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.12chqyl0vt5ujh15b78231g5i8mi' name='course_info' table='[course_info$]' type='table'>
+          <columns gridOrigin='A1:J2373:no:A1:J2373:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Index' ordinal='0' />
+            <column datatype='string' name='Prefix' ordinal='1' />
+            <column datatype='string' name='Course ID' ordinal='2' />
+            <column datatype='string' name='Course_Name' ordinal='3' />
+            <column datatype='string' name='Credit Hours' ordinal='4' />
+            <column datatype='string' name='Credit_Hours' ordinal='5' />
+            <column datatype='string' name='Cross Listed' ordinal='6' />
+            <column datatype='string' name='Corequisites' ordinal='7' />
+            <column datatype='string' name='Prerequisites' ordinal='8' />
+            <column datatype='string' name='Course_Descriptions' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J2373:no:A1:J2373:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Index]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prefix</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Prefix]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Prefix</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Course ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Course ID]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Course ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Course_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Course_Name]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Course_Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit Hours</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Credit Hours]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Credit Hours</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit_Hours</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Credit_Hours]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Credit_Hours</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cross Listed</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cross Listed]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Cross Listed</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Corequisites</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Corequisites]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Corequisites</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prerequisites</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Prerequisites]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Prerequisites</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Course_Descriptions</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Course_Descriptions]</local-name>
+            <parent-name>[course_info]</parent-name>
+            <remote-alias>Course_Descriptions</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Corequisites]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Course ID]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Course_Descriptions]' role='dimension' type='nominal' />
+      <column caption='Course Name' datatype='string' name='[Course_Name]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Credit Hours]' role='dimension' type='nominal' />
+      <column caption='Credit Hours1' datatype='string' name='[Credit_Hours]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Cross Listed]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Prefix]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Prerequisites]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='course_info' datatype='table' name='[__tableau_internal_object_id__].[course!info_FEC225254CB348A7BBF8118D089DDF62]' role='measure' type='quantitative' />
+      <group caption='Action (All Text)' hidden='true' name='[Action (All Text)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[all_text]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Corequisites,Course Name,Credit Hours,Cross Listed,Prerequisites)' hidden='true' name='[Action (Corequisites,Course Name,Credit Hours,Cross Listed,Prerequisites)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Corequisites]' />
+          <groupfilter function='level-members' level='[Course_Name]' />
+          <groupfilter function='level-members' level='[Credit Hours]' />
+          <groupfilter function='level-members' level='[Cross Listed]' />
+          <groupfilter function='level-members' level='[Prerequisites]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Corequisites,Course Name,Credit Hours,Prerequisites)' hidden='true' name='[Action (Corequisites,Course Name,Credit Hours,Prerequisites)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Corequisites]' />
+          <groupfilter function='level-members' level='[Course_Name]' />
+          <groupfilter function='level-members' level='[Credit Hours]' />
+          <groupfilter function='level-members' level='[Prerequisites]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Course ID,All Text)' hidden='true' name='[Action (Course ID,All Text)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Course ID]' />
+          <groupfilter function='level-members' level='[all_text]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Course ID,Course_Descriptions)' hidden='true' name='[Action (Course ID,Course_Descriptions)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Course ID]' />
+          <groupfilter function='level-members' level='[Course_Descriptions]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Course Name,Credit Hours,Prefix)' hidden='true' name='[Action (Course Name,Credit Hours,Prefix)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Course_Name]' />
+          <groupfilter function='level-members' level='[Credit Hours]' />
+          <groupfilter function='level-members' level='[Prefix]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='course_info' id='course!info_FEC225254CB348A7BBF8118D089DDF62'>
+            <properties context=''>
+              <relation connection='excel-direct.12chqyl0vt5ujh15b78231g5i8mi' name='course_info' table='[course_info$]' type='table'>
+                <columns gridOrigin='A1:J2373:no:A1:J2373:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Index' ordinal='0' />
+                  <column datatype='string' name='Prefix' ordinal='1' />
+                  <column datatype='string' name='Course ID' ordinal='2' />
+                  <column datatype='string' name='Course_Name' ordinal='3' />
+                  <column datatype='string' name='Credit Hours' ordinal='4' />
+                  <column datatype='string' name='Credit_Hours' ordinal='5' />
+                  <column datatype='string' name='Cross Listed' ordinal='6' />
+                  <column datatype='string' name='Corequisites' ordinal='7' />
+                  <column datatype='string' name='Prerequisites' ordinal='8' />
+                  <column datatype='string' name='Course_Descriptions' ordinal='9' />
                 </columns>
               </relation>
             </properties>
@@ -216,7 +500,7 @@
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='integer' name='context'>0</attribute>
               <attribute datatype='string' name='gridOrigin'>&quot;A1:J2373:no:A1:J2373:0&quot;</attribute>
               <attribute datatype='boolean' name='header'>true</attribute>
               <attribute datatype='integer' name='outcome'>2</attribute>
@@ -560,288 +844,6 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
-    <datasource caption='course_info (course_info_cleaned) Explore' inline='true' name='federated.1209w1k0afd9961bwkdyl1a22vd3' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='course_info_cleaned' name='excel-direct.12chqyl0vt5ujh15b78231g5i8mi'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Samantha/Desktop/NSS Folder/Projects/advisory_tool/Data/course_info_cleaned.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.12chqyl0vt5ujh15b78231g5i8mi' name='course_info' table='[course_info$]' type='table'>
-          <columns gridOrigin='A1:J2373:no:A1:J2373:0' header='yes' outcome='2'>
-            <column datatype='integer' name='Index' ordinal='0' />
-            <column datatype='string' name='Prefix' ordinal='1' />
-            <column datatype='string' name='Course ID' ordinal='2' />
-            <column datatype='string' name='Course_Name' ordinal='3' />
-            <column datatype='string' name='Credit Hours' ordinal='4' />
-            <column datatype='string' name='Credit_Hours' ordinal='5' />
-            <column datatype='string' name='Cross Listed' ordinal='6' />
-            <column datatype='string' name='Corequisites' ordinal='7' />
-            <column datatype='string' name='Prerequisites' ordinal='8' />
-            <column datatype='string' name='Course_Descriptions' ordinal='9' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.12chqyl0vt5ujh15b78231g5i8mi' name='course_info' table='[course_info$]' type='table'>
-          <columns gridOrigin='A1:J2373:no:A1:J2373:0' header='yes' outcome='2'>
-            <column datatype='integer' name='Index' ordinal='0' />
-            <column datatype='string' name='Prefix' ordinal='1' />
-            <column datatype='string' name='Course ID' ordinal='2' />
-            <column datatype='string' name='Course_Name' ordinal='3' />
-            <column datatype='string' name='Credit Hours' ordinal='4' />
-            <column datatype='string' name='Credit_Hours' ordinal='5' />
-            <column datatype='string' name='Cross Listed' ordinal='6' />
-            <column datatype='string' name='Corequisites' ordinal='7' />
-            <column datatype='string' name='Prerequisites' ordinal='8' />
-            <column datatype='string' name='Course_Descriptions' ordinal='9' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:J2373:no:A1:J2373:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>2</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Index</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Index]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Index</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Prefix</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Prefix]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Prefix</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Course ID</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Course ID]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Course ID</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Course_Name</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Course_Name]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Course_Name</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Credit Hours</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Credit Hours]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Credit Hours</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Credit_Hours</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Credit_Hours]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Credit_Hours</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Cross Listed</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Cross Listed]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Cross Listed</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Corequisites</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Corequisites]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Corequisites</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Prerequisites</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Prerequisites]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Prerequisites</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Course_Descriptions</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Course_Descriptions]</local-name>
-            <parent-name>[course_info]</parent-name>
-            <remote-alias>Course_Descriptions</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[course!info_FEC225254CB348A7BBF8118D089DDF62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[Corequisites]' role='dimension' type='nominal' />
-      <column datatype='string' name='[Course ID]' role='dimension' type='nominal' />
-      <column datatype='string' name='[Course_Descriptions]' role='dimension' type='nominal' />
-      <column caption='Course Name' datatype='string' name='[Course_Name]' role='dimension' type='nominal' />
-      <column datatype='string' name='[Credit Hours]' role='dimension' type='nominal' />
-      <column caption='Credit Hours1' datatype='string' name='[Credit_Hours]' role='dimension' type='nominal' />
-      <column datatype='string' name='[Cross Listed]' role='dimension' type='nominal' />
-      <column datatype='string' name='[Prefix]' role='dimension' type='nominal' />
-      <column datatype='string' name='[Prerequisites]' role='dimension' type='nominal' />
-      <_.fcp.ObjectModelTableType.true...column caption='course_info' datatype='table' name='[__tableau_internal_object_id__].[course!info_FEC225254CB348A7BBF8118D089DDF62]' role='measure' type='quantitative' />
-      <group caption='Action (All Text)' hidden='true' name='[Action (All Text)]' name-style='unqualified' user:auto-column='sheet_link'>
-        <groupfilter function='crossjoin'>
-          <groupfilter function='level-members' level='[all_text]' />
-        </groupfilter>
-      </group>
-      <group caption='Action (Corequisites,Course Name,Credit Hours,Cross Listed,Prerequisites)' hidden='true' name='[Action (Corequisites,Course Name,Credit Hours,Cross Listed,Prerequisites)]' name-style='unqualified' user:auto-column='sheet_link'>
-        <groupfilter function='crossjoin'>
-          <groupfilter function='level-members' level='[Corequisites]' />
-          <groupfilter function='level-members' level='[Course_Name]' />
-          <groupfilter function='level-members' level='[Credit Hours]' />
-          <groupfilter function='level-members' level='[Cross Listed]' />
-          <groupfilter function='level-members' level='[Prerequisites]' />
-        </groupfilter>
-      </group>
-      <group caption='Action (Course ID,All Text)' hidden='true' name='[Action (Course ID,All Text)]' name-style='unqualified' user:auto-column='sheet_link'>
-        <groupfilter function='crossjoin'>
-          <groupfilter function='level-members' level='[Course ID]' />
-          <groupfilter function='level-members' level='[all_text]' />
-        </groupfilter>
-      </group>
-      <group caption='Action (Course ID,Course_Descriptions)' hidden='true' name='[Action (Course ID,Course_Descriptions)]' name-style='unqualified' user:auto-column='sheet_link'>
-        <groupfilter function='crossjoin'>
-          <groupfilter function='level-members' level='[Course ID]' />
-          <groupfilter function='level-members' level='[Course_Descriptions]' />
-        </groupfilter>
-      </group>
-      <group caption='Action (Course Name,Credit Hours,Prefix)' hidden='true' name='[Action (Course Name,Credit Hours,Prefix)]' name-style='unqualified' user:auto-column='sheet_link'>
-        <groupfilter function='crossjoin'>
-          <groupfilter function='level-members' level='[Course_Name]' />
-          <groupfilter function='level-members' level='[Credit Hours]' />
-          <groupfilter function='level-members' level='[Prefix]' />
-        </groupfilter>
-      </group>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='course_info' id='course!info_FEC225254CB348A7BBF8118D089DDF62'>
-            <properties context=''>
-              <relation connection='excel-direct.12chqyl0vt5ujh15b78231g5i8mi' name='course_info' table='[course_info$]' type='table'>
-                <columns gridOrigin='A1:J2373:no:A1:J2373:0' header='yes' outcome='2'>
-                  <column datatype='integer' name='Index' ordinal='0' />
-                  <column datatype='string' name='Prefix' ordinal='1' />
-                  <column datatype='string' name='Course ID' ordinal='2' />
-                  <column datatype='string' name='Course_Name' ordinal='3' />
-                  <column datatype='string' name='Credit Hours' ordinal='4' />
-                  <column datatype='string' name='Credit_Hours' ordinal='5' />
-                  <column datatype='string' name='Cross Listed' ordinal='6' />
-                  <column datatype='string' name='Corequisites' ordinal='7' />
-                  <column datatype='string' name='Prerequisites' ordinal='8' />
-                  <column datatype='string' name='Course_Descriptions' ordinal='9' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
   </datasources>
   <actions>
     <action caption='Filter 2 (generated)' name='[Action2_F9F97FD3129C4DE4823F22B332DF85FB]'>
@@ -906,12 +908,21 @@
               <groupfilter function='level-members' level='[Prerequisites]' />
             </groupfilter>
           </filter>
+          <filter class='categorical' column='[federated.1209w1k0afd9961bwkdyl1a22vd3].[Action (Corequisites,Course Name,Credit Hours,Prerequisites)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_F9F97FD3129C4DE4823F22B332DF85FB]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Corequisites]' />
+              <groupfilter function='level-members' level='[Course_Name]' />
+              <groupfilter function='level-members' level='[Credit Hours]' />
+              <groupfilter function='level-members' level='[Prerequisites]' />
+            </groupfilter>
+          </filter>
           <filter class='categorical' column='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]'>
             <groupfilter function='level-members' level='[none:Course_Descriptions:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]</column>
             <column>[federated.1209w1k0afd9961bwkdyl1a22vd3].[Action (Corequisites,Course Name,Credit Hours,Cross Listed,Prerequisites)]</column>
+            <column>[federated.1209w1k0afd9961bwkdyl1a22vd3].[Action (Corequisites,Course Name,Credit Hours,Prerequisites)]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -1136,16 +1147,21 @@
             <datasource caption='belmont' name='federated.0yq1m790n27gt51d439ys1rsdvbz' />
           </datasources>
           <datasource-dependencies datasource='federated.0yq1m790n27gt51d439ys1rsdvbz'>
+            <column datatype='string' name='[Degree]' role='dimension' type='nominal' />
             <column datatype='string' name='[Program]' role='dimension' type='nominal' />
             <column datatype='string' name='[Total Credit Hours]' role='dimension' type='nominal' />
             <column-instance column='[Total Credit Hours]' derivation='Attribute' name='[attr:Total Credit Hours:nk]' pivot='key' type='nominal' />
             <column-instance column='[Program]' derivation='None' name='[none:Program:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yq1m790n27gt51d439ys1rsdvbz].[Action (Degree)]'>
+            <groupfilter function='level-members' level='[Degree]' user:ui-action-filter='[Action3_A7F3ED201F2E403194FC07EA48BE0E43]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
           <filter class='categorical' column='[federated.0yq1m790n27gt51d439ys1rsdvbz].[none:Program:nk]'>
             <groupfilter function='level-members' level='[none:Program:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0yq1m790n27gt51d439ys1rsdvbz].[none:Program:nk]</column>
+            <column>[federated.0yq1m790n27gt51d439ys1rsdvbz].[Action (Degree)]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -1283,10 +1299,10 @@
             <column-instance column='[Total Credit Hours]' derivation='None' name='[none:Total Credit Hours:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Degree:nk]'>
-            <groupfilter function='level-members' level='[none:Degree:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            <groupfilter function='empty-level' member='[none:Degree:nk]' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]'>
-            <groupfilter function='empty-level' member='[none:Program:nk]' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[none:Program:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]</column>
@@ -1374,70 +1390,40 @@
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='98734' id='79' param='horz' type-v2='layout-flow' w='99368' x='316' y='633'>
-            <zone h='98734' id='50' param='horz' type-v2='layout-flow' w='99368' x='316' y='633'>
-              <zone h='98734' id='40' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
-                <zone h='98734' id='38' type-v2='layout-basic' w='99368' x='316' y='633'>
-                  <zone h='92792' id='19' param='horz' type-v2='layout-flow' w='96218' x='2045' y='3236'>
-                    <zone h='92792' id='12' type-v2='layout-basic' w='96218' x='2045' y='3236'>
-                      <zone h='92792' id='9' param='horz' type-v2='layout-flow' w='57977' x='2045' y='3236'>
-                        <zone h='92792' id='7' type-v2='layout-basic' w='57977' x='2045' y='3236'>
-                          <zone forceUpdate='' h='87184' id='3' param='https://catalog.belmont.edu/content.php?catoid=9&amp;navoid=445' type-v2='web' w='35690' x='24332' y='8844'>
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone h='92792' id='23' type-v2='empty' w='1389' x='22943' y='3236'>
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone forceUpdate='true' h='5608' id='32' type-v2='text' w='35690' x='24332' y='3236'>
-                            <formatted-text>
-                              <run bold='true' fontalignment='1' fontsize='24' underline='true'>Higher Education Advisory Tool</run>
-                            </formatted-text>
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone h='57423' id='11' name='Explore Programs' show-caption='true' w='20898' x='2045' y='38605'>
-                            <layout-cache type-h='fixed' type-w='fixed' />
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone h='32836' id='5' name='Explore Degrees' show-caption='true' w='20898' x='2045' y='3236'>
-                            <layout-cache type-h='fixed' type-w='fixed' />
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
-                          <zone h='2533' id='52' type-v2='empty' w='20898' x='2045' y='36072'>
-                            <zone-style>
-                              <format attr='border-color' value='#000000' />
-                              <format attr='border-style' value='none' />
-                              <format attr='border-width' value='0' />
-                              <format attr='margin' value='4' />
-                            </zone-style>
-                          </zone>
+            <zone h='98734' id='40' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
+              <zone h='98734' id='38' type-v2='layout-basic' w='99368' x='316' y='633'>
+                <zone h='92791' id='19' param='horz' type-v2='layout-flow' w='96213' x='2032' y='3208'>
+                  <zone h='92791' id='12' type-v2='layout-basic' w='96213' x='2032' y='3208'>
+                    <zone h='92791' id='9' param='horz' type-v2='layout-flow' w='57958' x='2032' y='3208'>
+                      <zone h='92791' id='7' type-v2='layout-basic' w='57958' x='2032' y='3208'>
+                        <zone forceUpdate='' h='87207' id='3' param='https://catalog.belmont.edu/content.php?catoid=9&amp;navoid=444' type-v2='web' w='35692' x='24298' y='8792'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
                         </zone>
-                      </zone>
-                      <zone fixed-size='160' h='92792' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='36900' x='61363' y='3236'>
-                        <zone fixed-size='422' h='34019' id='16' is-fixed='true' name='Explore Courses' w='36900' x='61363' y='3236'>
+                        <zone h='92791' id='23' type-v2='empty' w='1387' x='22911' y='3208'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone forceUpdate='true' h='5584' id='32' type-v2='text' w='35692' x='24298' y='3208'>
+                          <formatted-text>
+                            <run bold='true' fontalignment='1' fontsize='24' underline='true'>Higher Education Advisory Tool</run>
+                          </formatted-text>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='57449' id='11' name='Explore Programs' show-caption='true' w='20879' x='2032' y='38550'>
                           <layout-cache type-h='fixed' type-w='fixed' />
                           <zone-style>
                             <format attr='border-color' value='#000000' />
@@ -1446,7 +1432,8 @@
                             <format attr='margin' value='4' />
                           </zone-style>
                         </zone>
-                        <zone fixed-size='35' h='3402' id='29' is-fixed='true' type-v2='empty' w='36900' x='61363' y='37255'>
+                        <zone h='32814' id='5' name='Explore Degrees' show-caption='true' w='20879' x='2032' y='3208'>
+                          <layout-cache type-h='fixed' type-w='fixed' />
                           <zone-style>
                             <format attr='border-color' value='#000000' />
                             <format attr='border-style' value='none' />
@@ -1454,8 +1441,7 @@
                             <format attr='margin' value='4' />
                           </zone-style>
                         </zone>
-                        <zone h='55371' id='21' name='Explore Course Descriptions' w='36900' x='61363' y='40657'>
-                          <layout-cache cell-count-h='2367' non-cell-size-h='63' type-h='cell' type-w='fixed' />
+                        <zone h='2528' id='52' type-v2='empty' w='20879' x='2032' y='36022'>
                           <zone-style>
                             <format attr='border-color' value='#000000' />
                             <format attr='border-style' value='none' />
@@ -1464,7 +1450,27 @@
                           </zone-style>
                         </zone>
                       </zone>
-                      <zone h='92792' id='53' type-v2='empty' w='1341' x='60022' y='3236'>
+                    </zone>
+                    <zone fixed-size='160' h='92791' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='36914' x='61331' y='3208'>
+                      <zone fixed-size='422' h='34019' id='16' is-fixed='true' name='Explore Courses' w='36914' x='61331' y='3208'>
+                        <layout-cache type-h='fixed' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone fixed-size='53' h='4826' id='29' is-fixed='true' type-v2='empty' w='36914' x='61331' y='37227'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='53946' id='21' name='Explore Course Descriptions' w='36914' x='61331' y='42053'>
+                        <layout-cache cell-count-h='2367' non-cell-size-h='63' type-h='cell' type-w='fixed' />
                         <zone-style>
                           <format attr='border-color' value='#000000' />
                           <format attr='border-style' value='none' />
@@ -1473,39 +1479,47 @@
                         </zone-style>
                       </zone>
                     </zone>
+                    <zone h='92791' id='53' type-v2='empty' w='1341' x='59990' y='3208'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
                   </zone>
-                  <zone h='2603' id='25' type-v2='empty' w='96218' x='2045' y='633'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='95395' id='26' type-v2='empty' w='1729' x='316' y='633'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='3339' id='27' type-v2='empty' w='97947' x='316' y='96028'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
-                  <zone h='98734' id='28' type-v2='empty' w='1421' x='98263' y='633'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
-                  </zone>
+                </zone>
+                <zone h='2575' id='25' type-v2='empty' w='96213' x='2032' y='633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='95366' id='26' type-v2='empty' w='1716' x='316' y='633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='3368' id='27' type-v2='empty' w='97929' x='316' y='95999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='98734' id='28' type-v2='empty' w='1439' x='98245' y='633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
                 </zone>
               </zone>
             </zone>
@@ -1519,16 +1533,16 @@
         </zone>
         <zone h='3481' id='10' mode='pattern' name='Explore Degrees' param='[federated.0yq1m790n27gt51d439ys1rsdvbz].[none:Degree:nk]' show-title='false' type-v2='filter' values='database' w='12048' x='9493' y='4272' />
         <zone h='3481' id='15' mode='pattern' name='Explore Programs' param='[federated.0yq1m790n27gt51d439ys1rsdvbz].[none:Program:nk]' show-title='false' type-v2='filter' values='database' w='11494' x='9962' y='39399' />
-        <zone h='4826' id='48' mode='checkdropdown' name='Explore Courses' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Name:nk]' type-v2='filter' values='relevant' w='19455' x='67603' y='2453' />
+        <zone h='4826' id='48' mode='checkdropdown' name='Explore Courses' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Name:nk]' type-v2='filter' values='relevant' w='19455' x='67877' y='2294' />
         <zone h='4272' id='51' mode='checkdropdown' name='Explore Courses' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Credit Hours:nk]' type-v2='filter' values='database' w='7143' x='87648' y='2373' />
-        <zone h='3402' id='80' mode='pattern' name='Explore Course Descriptions' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]' type-v2='filter' values='database' w='24734' x='73138' y='40111' />
+        <zone h='3402' id='80' mode='pattern' name='Explore Course Descriptions' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]' type-v2='filter' values='database' w='24743' x='73204' y='37579' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='86' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98734' id='85' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
+            <zone h='100000' id='92' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98734' id='91' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
                 <zone h='3481' id='10' mode='pattern' name='Explore Degrees' param='[federated.0yq1m790n27gt51d439ys1rsdvbz].[none:Degree:nk]' show-title='false' type-v2='filter' values='database' w='12048' x='9493' y='4272'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1538,7 +1552,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='255' h='32836' id='5' is-fixed='true' name='Explore Degrees' show-caption='true' w='20898' x='2045' y='3236'>
+                <zone fixed-size='254' h='32814' id='5' is-fixed='true' name='Explore Degrees' show-caption='true' w='20879' x='2032' y='3208'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1548,7 +1562,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone forceUpdate='true' h='5608' id='32' type-v2='text' w='35690' x='24332' y='3236'>
+                <zone forceUpdate='true' h='5584' id='32' type-v2='text' w='35692' x='24298' y='3208'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontsize='24' underline='true'>Higher Education Advisory Tool</run>
                   </formatted-text>
@@ -1560,7 +1574,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='4826' id='48' mode='checkdropdown' name='Explore Courses' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Name:nk]' type-v2='filter' values='relevant' w='19455' x='67603' y='2453'>
+                <zone h='4826' id='48' mode='checkdropdown' name='Explore Courses' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Name:nk]' type-v2='filter' values='relevant' w='19455' x='67877' y='2294'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1578,7 +1592,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='264' h='34019' id='16' is-fixed='true' name='Explore Courses' w='36900' x='61363' y='3236'>
+                <zone fixed-size='264' h='34019' id='16' is-fixed='true' name='Explore Courses' w='36914' x='61331' y='3208'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1588,7 +1602,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' forceUpdate='' h='87184' id='3' is-fixed='true' param='https://catalog.belmont.edu/content.php?catoid=9&amp;navoid=445' type-v2='web' w='35690' x='24332' y='8844'>
+                <zone fixed-size='280' forceUpdate='' h='87207' id='3' is-fixed='true' param='https://catalog.belmont.edu/content.php?catoid=9&amp;navoid=444' type-v2='web' w='35692' x='24298' y='8792'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1606,7 +1620,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='57423' id='11' is-fixed='true' name='Explore Programs' show-caption='true' w='20898' x='2045' y='38605'>
+                <zone fixed-size='280' h='57449' id='11' is-fixed='true' name='Explore Programs' show-caption='true' w='20879' x='2032' y='38550'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1616,7 +1630,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='3402' id='80' mode='pattern' name='Explore Course Descriptions' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]' type-v2='filter' values='database' w='24734' x='73138' y='40111'>
+                <zone h='3402' id='80' mode='pattern' name='Explore Course Descriptions' param='[federated.1209w1k0afd9961bwkdyl1a22vd3].[none:Course_Descriptions:nk]' type-v2='filter' values='database' w='24743' x='73204' y='37579'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1625,7 +1639,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='55371' id='21' is-fixed='true' name='Explore Course Descriptions' w='36900' x='61363' y='40657'>
+                <zone fixed-size='280' h='53946' id='21' is-fixed='true' name='Explore Course Descriptions' w='36914' x='61331' y='42053'>
                   <layout-cache cell-count-h='2367' non-cell-size-h='63' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1671,9 +1685,9 @@
         <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='98734' id='34' param='horz' type-v2='layout-flow' w='99368' x='316' y='633'>
             <zone h='98734' id='30' type-v2='layout-basic' w='99368' x='316' y='633'>
-              <zone h='93673' id='15' param='horz' type-v2='layout-flow' w='97996' x='316' y='3159'>
-                <zone h='93673' id='13' type-v2='layout-basic' w='97996' x='316' y='3159'>
-                  <zone forceUpdate='true' h='21835' id='19' type-v2='text' w='17908' x='62493' y='3159'>
+              <zone h='93679' id='15' param='horz' type-v2='layout-flow' w='97989' x='316' y='3146'>
+                <zone h='93679' id='13' type-v2='layout-basic' w='97989' x='316' y='3146'>
+                  <zone forceUpdate='true' h='21827' id='19' type-v2='text' w='17908' x='62481' y='3146'>
                     <formatted-text>
                       <run bold='true' fontalignment='1' fontsize='16' underline='true'>Student Information</run>
                       <run fontalignment='1'>Æ&#10;</run>
@@ -1704,7 +1718,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='93673' id='20' name='Student Course List' w='35638' x='1653' y='3159'>
+                  <zone h='93679' id='20' name='Student Course List' w='35632' x='1648' y='3146'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1712,7 +1726,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone forceUpdate='' h='61632' id='21' param='https://catalog.belmont.edu/content.php?catoid=9&amp;catoid=9&amp;navoid=444' type-v2='web' w='59212' x='39100' y='35200'>
+                  <zone forceUpdate='' h='61645' id='21' param='https://catalog.belmont.edu/content.php?catoid=9&amp;catoid=9&amp;navoid=444' type-v2='web' w='59216' x='39089' y='35180'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1720,7 +1734,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='16436' id='11' name='Student Degree(s/Minor)' w='22050' x='39100' y='8558'>
+                  <zone h='16437' id='11' name='Student Degree(s/Minor)' w='22051' x='39089' y='8536'>
                     <layout-cache type-h='fixed' type-w='fixed' />
                     <zone-style>
                       <format attr='border-color' value='#000000' />
@@ -1729,7 +1743,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='5399' id='17' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Degree:nk]' type-v2='filter' values='database' w='9762' x='39100' y='3159'>
+                  <zone h='5390' id='17' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Degree:nk]' type-v2='filter' values='database' w='9762' x='39089' y='3146'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1737,7 +1751,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='5399' id='16' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]' type-v2='filter' values='relevant' w='12288' x='48862' y='3159'>
+                  <zone h='5390' id='16' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]' type-v2='filter' values='relevant' w='12289' x='48851' y='3146'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1745,7 +1759,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='93673' id='22' type-v2='empty' w='1809' x='37291' y='3159'>
+                  <zone h='93679' id='22' type-v2='empty' w='1809' x='37280' y='3146'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1753,7 +1767,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='93673' id='23' type-v2='empty' w='1337' x='316' y='3159'>
+                  <zone h='93679' id='23' type-v2='empty' w='1332' x='316' y='3146'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1761,7 +1775,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='21835' id='26' type-v2='empty' w='1343' x='61150' y='3159'>
+                  <zone h='21827' id='26' type-v2='empty' w='1341' x='61140' y='3146'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1769,7 +1783,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='3323' id='27' type-v2='empty' w='59212' x='39100' y='31877'>
+                  <zone h='3323' id='27' type-v2='empty' w='59216' x='39089' y='31857'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1777,7 +1791,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='21835' id='29' is-scaled='1' param='C:/Users/Samantha/Pictures/Belmont Logo.jpg' type-v2='bitmap' w='17911' x='80401' y='3159'>
+                  <zone h='21827' id='29' is-scaled='1' param='C:/Users/Samantha/Pictures/Belmont Logo.jpg' type-v2='bitmap' w='17916' x='80389' y='3146'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1785,11 +1799,11 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone forceUpdate='true' h='6883' id='47' type-v2='text' w='59212' x='39100' y='24994'>
+                  <zone forceUpdate='true' h='6884' id='47' type-v2='text' w='59216' x='39089' y='24973'>
                     <formatted-text>
-                      <run bold='true' fontalignment='1' fontsize='10' underline='true'>Student Notes</run>
+                      <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11' underline='true'>Student Notes</run>
                       <run fontalignment='1'>Æ&#10;&#10;</run>
-                      <run bold='true' fontalignment='1'> Insert Student Notes Here</run>
+                      <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='10'> Insert Student Notes Here</run>
                     </formatted-text>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
@@ -1800,7 +1814,7 @@
                   </zone>
                 </zone>
               </zone>
-              <zone h='2535' id='24' type-v2='empty' w='97996' x='316' y='96832'>
+              <zone h='2542' id='24' type-v2='empty' w='97989' x='316' y='96825'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1808,7 +1822,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='2526' id='25' type-v2='empty' w='97996' x='316' y='633'>
+              <zone h='2513' id='25' type-v2='empty' w='97989' x='316' y='633'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1816,7 +1830,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='98734' id='28' type-v2='empty' w='1372' x='98312' y='633'>
+              <zone h='98734' id='28' type-v2='empty' w='1379' x='98305' y='633'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1840,8 +1854,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='67' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98734' id='66' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
+            <zone h='100000' id='73' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98734' id='72' param='vert' type-v2='layout-flow' w='99368' x='316' y='633'>
                 <zone h='3481' id='36' mode='checkdropdown' name='Student Course List' param='[federated.0aye6vc1axqq7010lwue90ya2kd9].[none:Credit Hours:nk]' type-v2='filter' values='database' w='7748' x='28310' y='2690'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1860,7 +1874,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='93673' id='20' is-fixed='true' name='Student Course List' w='35638' x='1653' y='3159'>
+                <zone fixed-size='280' h='93679' id='20' is-fixed='true' name='Student Course List' w='35632' x='1648' y='3146'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1869,7 +1883,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone forceUpdate='true' h='21835' id='19' type-v2='text' w='17908' x='62493' y='3159'>
+                <zone forceUpdate='true' h='21827' id='19' type-v2='text' w='17908' x='62481' y='3146'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontsize='16' underline='true'>Student Information</run>
                     <run fontalignment='1'>Æ&#10;</run>
@@ -1901,7 +1915,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='167' h='21835' id='29' is-fixed='true' is-scaled='1' param='C:/Users/Samantha/Pictures/Belmont Logo.jpg' type-v2='bitmap' w='17911' x='80401' y='3159'>
+                <zone fixed-size='167' h='21827' id='29' is-fixed='true' is-scaled='1' param='C:/Users/Samantha/Pictures/Belmont Logo.jpg' type-v2='bitmap' w='17916' x='80389' y='3146'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1910,7 +1924,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='5399' id='17' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Degree:nk]' type-v2='filter' values='database' w='9762' x='39100' y='3159'>
+                <zone h='5390' id='17' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Degree:nk]' type-v2='filter' values='database' w='9762' x='39089' y='3146'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1919,7 +1933,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='5399' id='16' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]' type-v2='filter' values='relevant' w='12288' x='48862' y='3159'>
+                <zone h='5390' id='16' mode='checkdropdown' name='Student Degree(s/Minor)' param='[federated.01a8ae01tghoxh1go0h7w12mtdqk].[none:Program:nk]' type-v2='filter' values='relevant' w='12289' x='48851' y='3146'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1928,7 +1942,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='124' h='16436' id='11' is-fixed='true' name='Student Degree(s/Minor)' w='22050' x='39100' y='8558'>
+                <zone fixed-size='124' h='16437' id='11' is-fixed='true' name='Student Degree(s/Minor)' w='22051' x='39089' y='8536'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1938,11 +1952,11 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone forceUpdate='true' h='6883' id='47' type-v2='text' w='59212' x='39100' y='24994'>
+                <zone forceUpdate='true' h='6884' id='47' type-v2='text' w='59216' x='39089' y='24973'>
                   <formatted-text>
-                    <run bold='true' fontalignment='1' fontsize='10' underline='true'>Student Notes</run>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11' underline='true'>Student Notes</run>
                     <run fontalignment='1'>Æ&#10;&#10;</run>
-                    <run bold='true' fontalignment='1'> Insert Student Notes Here</run>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='10'> Insert Student Notes Here</run>
                   </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1952,7 +1966,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' forceUpdate='' h='61632' id='21' is-fixed='true' param='https://catalog.belmont.edu/content.php?catoid=9&amp;catoid=9&amp;navoid=444' type-v2='web' w='59212' x='39100' y='35200'>
+                <zone fixed-size='280' forceUpdate='' h='61645' id='21' is-fixed='true' param='https://catalog.belmont.edu/content.php?catoid=9&amp;catoid=9&amp;navoid=444' type-v2='web' w='59216' x='39089' y='35180'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1975,7 +1989,7 @@
       <simple-id uuid='{04B8199E-B4F4-475A-8CEE-B6CA572E95C3}' />
     </dashboard>
   </dashboards>
-  <windows show-side-pane='false' source-height='93'>
+  <windows show-side-pane='false' source-height='2'>
     <window class='worksheet' name='Explore Degrees'>
       <cards>
         <edge name='left'>
@@ -2122,7 +2136,7 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='51' />
+      <active id='3' />
       <simple-id uuid='{460E6013-E858-4BB0-86BC-B231113FB4D3}' />
     </window>
     <window class='dashboard' name='Student Path' tab-color='#4f779a'>
@@ -2134,7 +2148,7 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='21' />
       <simple-id uuid='{D79FD14F-4559-41E1-9667-97699CE17032}' />
     </window>
     <window class='worksheet' name='Student Degree(s/Minor)'>
@@ -2205,198 +2219,208 @@
   <thumbnails>
     <thumbnail height='192' name='Explore Belmont' width='192'>
       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
-      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
-      uiLlxAAAAABJRU5ErkJggg==
+      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
     </thumbnail>
     <thumbnail height='192' name='Explore Course Descriptions' width='164'>
       iVBORw0KGgoAAAANSUhEUgAAAKQAAADACAYAAACK0MgNAAAACXBIWXMAAA7DAAAOwwHHb6hk
